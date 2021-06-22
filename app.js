@@ -71,7 +71,7 @@ app.post("/" , function (req , res) {
 //     res.sendFile(__dirname + "/signup.html")
 // })
 
-app.listen(3000 , function (req , res) {
+app.listen(process.env.PORT || 3000 , function (req , res) {
     console.log("The server is linked to port 3000.");
 })
 
