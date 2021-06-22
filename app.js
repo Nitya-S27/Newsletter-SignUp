@@ -63,13 +63,13 @@ app.post("/" , function (req , res) {
 
 })
 
-// app.post("/failure" , function (req , res) {
-//     res.sendFile(__dirname + "/signup.html")
-// })
+app.post("/failure" , function (req , res) {
+    res.sendFile(__dirname + "/signup.html")
+})
 
-// app.post("/success" , function (req , res) {
-//     res.sendFile(__dirname + "/signup.html")
-// })
+app.post("/success" , function (req , res) {
+    res.sendFile(__dirname + "/signup.html")
+})
 
 app.listen(process.env.PORT || 3000 , function (req , res) {
     console.log("The server is linked to port 3000.");
